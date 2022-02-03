@@ -12,10 +12,10 @@ module.exports = {
     port : 3306,
     user : 'root',
     password : '',
-    database : 'db_contact_manager'
+    database : 'contact_manager_db'
   },
   migrations:{
-    directory:path.join(__dirname,'sevices/knexfile.js'),
+    directory:'./migrations',
   },
   pool:{
     min:2,
