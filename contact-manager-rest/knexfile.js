@@ -1,11 +1,12 @@
 // Update with your config settings.
 
 const { path } = require("express/lib/application");
+const dbhelpers = require("./helpers/dbhelpers");
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
-module.exports = {
+var db= {
   client: 'mysql',
   connection: {
     host : '127.0.0.1',
@@ -22,3 +23,4 @@ module.exports = {
     max:10,
   },
 };
+module.exports = db;
